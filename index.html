@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <title>Think of a number</title>
+    </head>
+
+    <body>
+        <div>
+        <h1 id='h1'>Click The start button then follow the instructions per alert/prompt</h1>
+        <div class="btn-div">
+        <button id='btn'>Start</button>
+        </div>
+        </div>
+    </body>
+    <script>
+        let heading = document.getElementById('h1');
+        let button = document.getElementById('btn');
+        button.onclick = function(){
+            let lastName = prompt('Enter your lastName');
+            if(lastName === ''){
+                return alert(`You forgot your lastname let's try that again`)
+            }
+            alert('Think of a number....then multiply that number by 5');
+            alert('Add 8 and multiply your results by 2');
+            alert('Subtract 6 from it then multiply by 10');
+            let total = prompt(`After you are done enter the total of what you've got down below`);
+            let results = (total - 100) / 100;
+            if(total === ''){
+                return alert('enter a valid number')
+            }
+            heading.textContent = 'Welcome home '+ lastName + ' here is the number you thought of ' + results;
+        }
+    </script>
+</html>

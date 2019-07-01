@@ -1,0 +1,58 @@
+body{
+    margin: 0 auto;
+    line-height: 1.4;
+    font-family: 'Anton', sans-serif;
+    font-size: 62.5%;
+    background-image: url('/img/overlay.png'), url('/img/antique-backdrop-background-129731.jpg');
+    background-repeat: repeat, no-repeat;
+	background-size: auto, 100% 100%;
+	background-attachment: fixed;
+}
+
+#h1{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-shadow: 5px 5px 5px grey;
+}
+.btn-div{
+    text-align: center;
+}
+#btn{
+   text-align: center;
+   margin: 10px;
+   width: 13vw;
+   height: 7vh;
+   cursor: pointer;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 1rem;
+   color: black;
+   background-color: aquamarine;
+   border-radius: 3px;
+   border: 1px solid burlywood;
+   font-weight: bold;
+    
+}
+
+#btn:hover{
+    box-shadow: 5px 5px 5px rgb(7, 83, 94);
+}
+
+@media screen and (max-width: 500px){
+    #h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #btn{
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #h1{
+        text-align: center;
+    }
+}
